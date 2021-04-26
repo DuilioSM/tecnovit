@@ -1,0 +1,324 @@
+/*
+1. Posicionamiento
+2. Modelo de caja (Box model)
+3. Tipografía
+4. Visuales
+5. Otros
+*/
+
+:root {
+    /* Colores */
+    --tec-red: #E74C3C;
+    --warm-black: #201e1c;
+    --black: #282623;
+    --gray: #BABABA;
+    --off-white: #FAF8F7;
+    --just-white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Play', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+    align-self: center;
+    background-color: var(--gray);
+    background-image: linear-gradient( 207.8deg, var(--gray) 16.69%, var(--tec-red) 100%);
+}
+
+header img {
+    width: 300px;
+    height: 48px;
+    margin-top: 60px;
+    align-self: center;
+    border-radius: 30px;
+}
+
+.header--title-container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 40px;
+    text-align: center;
+    align-self: center;
+}
+
+.header--title-container h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--off-white);
+}
+
+.header--title-container p {
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+
+.header--title-container .header--button {
+    position: absolute;
+    left: calc(50% - 118px);
+    top: 270px;
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--just-white);
+    /* Sombra */
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+}
+
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--off-white);
+}
+
+.main-services-container {
+    width: auto;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.main-services-container--title {
+    width: 100%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main-services-container .backgroundImg {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-image: url('./assets/img/infonavit.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-services-container h2 {
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+
+.main-services-container p {
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #757575;
+}
+
+.services-container {
+    background-color: var(--off-white);
+    width: 100%;
+    min-width: 288px;
+}
+
+.services-container .services-card {
+    width: 90%;
+    min-width: 288px;
+    max-width: 320px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 30px;
+    padding: auto;
+    background-color: var(--just-white);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .16);
+}
+
+.services-card img {
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    max-height: 300px;
+}
+
+.services-card .services--card-title {
+    width: 100%;
+    margin: 0;
+    margin-top: 25px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--warm-black);
+}
+
+.services-card .services--card-body {
+    width: 100%;
+    margin: 0;
+}
+
+.main-wallpaper-container {
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url('./assets/img/wallpaper.gif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.main-wallpaper-container h2 {
+    padding-top: 60px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.main-about-container {
+    /* position: relative; */
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--warm-black);
+}
+
+.about-details {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.about-details h2 {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.about-details p {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
+.about-container-cards .about--card {
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--black);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .16);
+}
+
+.about--card .about--card-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about--card .time {
+    background-image: url('./assets/img/check.png');
+}
+
+.about--card .money {
+    background-image: url('./assets/img/money.png');
+}
+
+.about--card .check {
+    background-image: url(./assets/img/check.png);
+}
+
+.about--card .calidad {
+    background-image: url(./assets/img/calidad.png);
+}
+
+.about--card-title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+
+.about--card-body {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--tec-red);
+}
+
+footer section {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .left ul {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+
+.left li {
+    margin: 10px 0;
+}
+
+.left a {
+    text-decoration: none;
+    color: var(--just-white);
+}
+
+.right img {
+    width: 50%;
+}

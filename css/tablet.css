@@ -1,0 +1,19 @@
+.about-container-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services-container .services-card {
+    margin: 30px;
+}
+
+.services-card img {
+    width: 50%;
+    height: 50%;
+}

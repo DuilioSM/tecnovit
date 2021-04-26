@@ -1,23 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tecnovit</title>
+    <link rel="shortcut icon" href="./assets/img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width:750px)">
+    <link rel="stylesheet" href="./css/laptopL.css" media="(min-width:1440px)">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <!-- scroll -->
+    <script src="assets/smooth-scroll-master/dist/smooth-scroll.polyfills.min.js"></script>
 </head>
+
 <body>
     <header class="header-container">
-        <img src="./assets/img/logo.svg" alt="">
+        <img src="./assets/img/all-tecno.png" alt="Logotipo Tecnovit">
         <div class="header--title-container">
             <h1>Mejorando la vida de los mexicanos</h1>
             <p>Brindando las mejores soluciones para la mejora de tu vivienda</p>
-            <a class="header--button" href="#plans">Conoce nuestras campañas<span></span></a>
+            <a class="header--button" href="#campaigns">Conoce nuestras campañas<span></span></a>
         </div>
     </header>
     <main class="main-container">
-
+        <section class="main-about-container">
+            <div class="about-details">
+                <h2>Obtén más por dinero</h2>
+                <p>Únete a la comunidad de las personas que ahorran</p>
+            </div>
+            <section class="about-container-cards">
+                <article class="about--card">
+                    <span class="about--card-icon time"></span>
+                    <p class="about--card-title">Puntualidad</p>
+                    <p class="about--card-body">Cumplimos con nuestros tiempos establecidos, además te brindamos la fecha exacta de entrega</p>
+                </article>
+                <article class="about--card">
+                    <span class="about--card-icon money"></span>
+                    <p class="about--card-title">Rendimiento</p>
+                    <p class="about--card-body">Te brindamos un mayor rendimiento sobre tu beneficio de Infonavit, así pues, teniendo la posibilidad de mejorar tu vivienda al máximo</p>
+                </article>
+                <article class="about--card">
+                    <span class="about--card-icon check"></span>
+                    <p class="about--card-title">Confiable</p>
+                    <p class="about--card-body">Contamos con una gran base de clientes contentos con nuestros servicios</p>
+                </article>
+                <article class="about--card">
+                    <span class="about--card-icon calidad"></span>
+                    <p class="about--card-title">Calidad</p>
+                    <p class="about--card-body">Tenemos la mejor calidad de servicio al cliente, con los mejores profesionales para brindarle el mejor servicio</p>
+                </article>
+            </section>
+        </section>
+        <section class="main-wallpaper-container">
+            <h2>Conócenos</h2>
+        </section>
+        <section id="campaigns" class="main-services-container">
+            <div class="backgroundImg"></div>
+            <div class="main-services-container--title">
+                <h2>Contamos con diferentes servicios </h2>
+                <p>Brindamos servicios financieros referentes a Infonvait, contando con el mejor equipo y atención para el cliente</p>
+            </div>
+            <section class="services-container">
+                <article class="services-card">
+                    <img src="./assets/img/HV.png" alt="Hipoteca Verde">
+                    <p class="services--card-title">Hipoteca Verde</p>
+                    <p class="services--card-body">El objetivo de este programa es reducir el precio de los consumos de agua, luz y gas, contribuyendo al cuidado ambiental.
+                    </p>
+                </article>
+                <article class="services-card">
+                    <img src="./assets/img/Mejoravit.png" alt="Mejoravit">
+                    <p class="services--card-title">Mejoravit</p>
+                    <p class="services--card-body">Es un crédito con el cual puedes mercar lo cual necesites para componer, remodelar, agrandar o edificar todos tus proyectos.</p>
+                </article>
+                <article class="services-card">
+                    <img src="./assets/img/hogar.png" alt="Hogar a tu medida">
+                    <p class="services--card-title">Hogar a tu medida</p>
+                    <p class="services--card-body">Es un programa que da a los derechohabientes con discapacidad o con parientes discapacitados, adaptaciones especiales para la casa que adquieran por medio de su crédito en dicha organización.</p>
+                </article>
+                <article class="services-card">
+                    <img src="./assets/img/remodelavit.png" alt="Remodelavit">
+                    <p class="services--card-title">Remodelavit</p>
+                    <p class="services--card-body">Es un crédito que te posibilita hacer cambios y modificaciones en tu vivienda, así sea para pintar, agrandar alguna habitación o hacer mejoras en el baño o cocina.</p>
+                </article>
+            </section>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <section class="left">
+            <ul>
+                <li>
+                    <a href="#">Facebook</a>
+                </li>
+                <li>
+                    <a href="#">"aqui va el celular"</a>
+                </li>
+                <li>
+                    <a href="contacto@tecnovit.com">contacto@tecnovit.com</a>
+                </li>
+            </ul>
+        </section>
+        <section class="right">
+            <img src="./assets/img/all-tecno.png" alt="Logo de Tecnovit, derechos reservados">
+        </section>
+    </footer>
 </body>
+
 </html>

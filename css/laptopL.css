@@ -1,0 +1,11 @@
+.about-container-cards {
+    justify-content: center;
+}
+
+.about-container-cards .about--card {
+    margin: 30px 70px;
+}
+
+.services-container .services-card {
+    margin: 30px 100px;
+}
