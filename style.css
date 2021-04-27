@@ -15,6 +15,17 @@
     --off-white: #FAF8F7;
     --just-white: #fff;
 }
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: var(--just-white);
+}
+::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: var(--just-white);
+}
+::-webkit-scrollbar-thumb{
+    background-color: brown; 
+}
 
 * {
     box-sizing: border-box;
