@@ -3,17 +3,31 @@
     flex-wrap: wrap;
 }
 
+.main-services-container p {
+    margin: 0 30px 30px 30px;
+}
+
 .services-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+.services-card img {
+    width: 50%;
+    height: auto;
+}
+
 .services-container .services-card {
     margin: 30px;
+    min-height: 320px;
 }
 
 .services-card img {
     width: 50%;
     height: 50%;
+}
+
+.right img {
+    width: 25%;
 }
